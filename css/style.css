@@ -23,6 +23,9 @@ ul {
     list-style-type: none;
 }
 
+#main-header {
+    margin-bottom: 125px;
+}
 
 .main-header-navbar {
     min-height: 75px;
@@ -35,19 +38,49 @@ ul {
 }
 
 .jumbotron {
-    min-height: 500px;
+    min-height: 575px;
     background-color: #B4D0E7;
+}
+
+.subscriptions {
+    margin-bottom: 125px;
+}
+
+.billing-selection {
+    min-height: 125px;
+    margin-bottom: 25px;
+}
+
+.subscriptions > .row {
+    min-height: 500px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.subscriptions .column {
+    min-height: 750px;
+    flex-basis: calc(100% / 3 - 50px / 3);
+}
+
+.subscriptions .column:last-child {
+    min-height: 250px;
+    flex-grow: 1;
+}
+
+.subscriptions .column, .billing-selection {
+    border: 3px dashed #000;
 }
 
 /* Utilities */
 .small-container {
     margin: 0 auto;
-    max-width: 720px;
+    max-width: 750px;
 }
 
 .large-container {
     margin: 0 auto;
-    max-width: 1080px;
+    max-width: 1000px;
 }
 
 .flex {
