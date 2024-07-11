@@ -87,6 +87,30 @@ ul {
     flex-basis: 40%;
 }
 
+.operations {
+    margin-bottom: 125px;
+}
+
+.operations > .title {
+    min-height: 50px;
+    margin-bottom: 25px;
+}
+
+.operations > .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.operations .column {
+    min-height: 375px;
+    flex-basis: calc(100% / 3 - 50px / 3);
+}
+
+.operations .column, .title {
+    border: 3px dashed #000;
+}
+
 /* Utilities */
 .small-container {
     margin: 0 auto;
