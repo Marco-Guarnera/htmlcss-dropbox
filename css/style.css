@@ -1,0 +1,34 @@
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Generics */
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Utilities */
+.container {
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+.flex {
+    display: flex;
+}
