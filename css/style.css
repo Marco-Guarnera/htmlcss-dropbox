@@ -52,7 +52,6 @@ ul {
 }
 
 .subscriptions > .row {
-    min-height: 500px;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 25px;
@@ -70,6 +69,22 @@ ul {
 
 .subscriptions .column, .billing-selection {
     border: 3px dashed #000;
+}
+
+.partner {
+    min-height: 375px;
+    flex-direction: row;
+    border: 3px dashed #000;
+    margin-bottom: 125px;
+}
+
+.partner > .image {
+    background-color: #000;
+    flex-basis: 60%;
+}
+
+.partner.info {
+    flex-basis: 40%;
 }
 
 /* Utilities */
