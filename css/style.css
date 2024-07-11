@@ -111,6 +111,15 @@ ul {
     border: 3px dashed #000;
 }
 
+.clients {
+    margin-bottom: 125px;
+}
+
+.clients > .info {
+    min-height: 250px;
+    border: 3px dashed #000;
+}
+
 /* Utilities */
 .small-container {
     margin: 0 auto;
