@@ -192,6 +192,23 @@ ul {
     border: 3px dashed #000;
 }
 
+#main-footer {
+    background-color: #000;
+}
+
+.main-footer-navbar {
+    min-height: 500px;
+    flex-direction: row;
+    align-items: center;
+    gap: 1px;
+}
+
+.main-footer-navbar > ul {
+    min-height: 375px;
+    flex-basis: 20%;
+    border: 3px dashed #FFF;
+}
+
 /* Utilities */
 .small-container {
     margin: 0 auto;
