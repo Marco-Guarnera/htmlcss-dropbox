@@ -183,6 +183,15 @@ ul {
     flex-grow: 1;
 }
 
+.faq {
+    margin-bottom: 125px;
+}
+
+.questions {
+    min-height: 375px;
+    border: 3px dashed #000;
+}
+
 /* Utilities */
 .small-container {
     margin: 0 auto;
