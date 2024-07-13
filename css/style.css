@@ -21,8 +21,13 @@ body {
 }
 
 h1 {
-    font-size: 65px;
+    font-size: 64px;
     font-weight: 900;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 36px;
     margin-bottom: 50px;
 }
 
@@ -119,28 +124,8 @@ section.partner .column-40{
     padding: 50px;
 }
 
-.features {
-    margin-bottom: 125px;
-}
-
-.features > .title {
-    min-height: 50px;
-    margin-bottom: 25px;
-}
-
-.features > .row {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 25px;
-}
-
-.features .column {
-    min-height: 375px;
-    flex-basis: calc(100% / 3 - 50px / 3);
-}
-
-.features .column, .title {
-    border: 3px dashed #000;
+section.features {
+    margin-bottom: 150px;
 }
 
 .clients {
@@ -293,4 +278,12 @@ section.partner .column-40{
 
 .row > .column-70 {
     flex-basis: 70%;
+}
+
+.row.columns-3 > .column {
+    flex-basis: calc(100% / 3 - 50px / 3);
+}
+
+.row.columns-3 {
+    gap: 25px;
 }
