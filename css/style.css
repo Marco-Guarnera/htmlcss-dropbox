@@ -26,6 +26,11 @@ h1 {
     margin-bottom: 50px;
 }
 
+h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -106,20 +111,12 @@ ul {
     border: 3px dashed #000;
 }
 
-.partner {
-    min-height: 375px;
-    flex-direction: row;
-    border: 3px dashed #000;
-    margin-bottom: 125px;
+section.partner {
+    margin-bottom: 150px;
 }
 
-.partner > .image {
-    background-color: #000;
-    flex-basis: 60%;
-}
-
-.partner.info {
-    flex-basis: 40%;
+section.partner .column-40{
+    padding: 50px;
 }
 
 .operations {
@@ -245,9 +242,9 @@ ul {
 }
 
 /* Utilities */
-.small-container {
+.container-small {
     margin: 0 auto;
-    max-width: 850px;
+    max-width: 1000px;
 }
 
 .container-large {
@@ -260,6 +257,12 @@ ul {
     color: #FFF;
     background-color: var(--primary-color);
     padding: 10px 15px;
+}
+
+.btn-secondary {
+    color: #000;
+    background-color: #FFF;
+    border: 2px solid #000;
 }
 
 .btn-small {
@@ -278,6 +281,14 @@ ul {
 
 .row > .column-30 {
     flex-basis: 30%;
+}
+
+.row > .column-40 {
+    flex-basis: 40%;
+}
+
+.row > .column-60 {
+    flex-basis: 60%;
 }
 
 .row > .column-70 {
