@@ -128,8 +128,13 @@ section.features {
     margin-bottom: 150px;
 }
 
-.clients {
-    margin-bottom: 125px;
+section.clients {
+    margin-bottom: 150px;
+}
+
+section.clients > a {
+    color: #00F;
+    text-decoration: underline;
 }
 
 .clients > .info {
