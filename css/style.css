@@ -119,27 +119,27 @@ section.partner .column-40{
     padding: 50px;
 }
 
-.operations {
+.features {
     margin-bottom: 125px;
 }
 
-.operations > .title {
+.features > .title {
     min-height: 50px;
     margin-bottom: 25px;
 }
 
-.operations > .row {
+.features > .row {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 25px;
 }
 
-.operations .column {
+.features .column {
     min-height: 375px;
     flex-basis: calc(100% / 3 - 50px / 3);
 }
 
-.operations .column, .title {
+.features .column, .title {
     border: 3px dashed #000;
 }
 
