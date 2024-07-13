@@ -137,11 +137,6 @@ section.clients > a {
     text-decoration: underline;
 }
 
-.clients > .info {
-    min-height: 250px;
-    border: 3px dashed #000;
-}
-
 .companies {
     flex-direction: row;
     flex-wrap: wrap;
@@ -205,13 +200,20 @@ section.clients > a {
     flex-grow: 1;
 }
 
-.faq {
-    margin-bottom: 125px;
+section.faq {
+    margin-bottom: 150px;
 }
 
-.questions {
-    min-height: 375px;
-    border: 3px dashed #000;
+section.faq > div {
+    min-height: 100px;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+}
+
+section.faq span {
+    font-weight: bold;
 }
 
 #main-footer {
