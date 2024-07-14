@@ -217,20 +217,28 @@ section.faq span {
 }
 
 #main-footer {
-    background-color: #000;
-}
-
-.main-footer-navbar {
     min-height: 500px;
-    flex-direction: row;
-    align-items: center;
-    gap: 1px;
+    background-color: #000;
+    color: #FFF;
 }
 
-.main-footer-navbar > ul {
-    min-height: 375px;
-    flex-basis: 20%;
-    border: 3px dashed #FFF;
+#main-footer a {
+    color: #FFF;
+    margin-bottom: 15px;
+}
+
+#main-footer ul {
+    margin: 75px 0;
+}
+
+#main-footer .translation {
+    display: inline-block;
+    border-top: 1px solid #FFF;
+    padding: 50px 25px 50px 0;
+}
+
+#main-footer .translation > * {
+    margin-right: 5px;
 }
 
 /* Utilities */
@@ -289,6 +297,10 @@ section.faq span {
 
 .row.columns-3 > .column {
     flex-basis: calc(100% / 3 - 50px / 3);
+}
+
+.row.columns-5 > .column {
+    flex-basis: calc(100% / 5);
 }
 
 .row.columns-3 {
