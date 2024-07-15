@@ -174,6 +174,22 @@ section.companies > div > div  {
     align-items: center;
 }
 
+section.companies .column-grow {
+    min-height: 325px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.companies .column-grow a {
+    display: block;
+    border-color: #FFF;
+    text-align: center;
+}
+
+section.companies .column-grow h2 {
+    margin: 0;
+}
+
 section.companies img {
     width: 50%;
 }
@@ -223,12 +239,8 @@ section.companies div.clear-channel-outdoor {
     background-color: #FFD830;
 }
 
-section.companies > div.trial {
-    min-height: 325px;
+section.companies > div:last-child {
     background-color: #B4D0E7;
-}
-
-section.companies > div.trial h2 {
     color: #61082B;
 }
 
