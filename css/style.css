@@ -36,6 +36,11 @@ h3 {
     margin-bottom: 15px;
 }
 
+hr {
+    width: 25%;
+    margin: 50px 0;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -66,11 +71,8 @@ ul {
 }
 
 #main-header > .navbar > ul {
+    align-items: center;
     gap: 25px;
-}
-
-#main-header > .navbar li {
-    align-self: center;
 }
 
 #jumbotron {
@@ -137,67 +139,72 @@ section.clients > a {
     text-decoration: underline;
 }
 
-.companies {
-    flex-direction: row;
-    flex-wrap: wrap;
+section.companies {
     margin-bottom: 125px;
 }
 
-.companies > div {
-    flex-basis: calc(100% / 3);
+section.companies > div > div  {
+    min-height: 275px;
+    justify-content: center;
+    align-items: center;
 }
 
-.companies > .left-column, .right-column {
-    flex-direction: row;
-    flex-wrap: wrap;
+section.companies img {
+    width: 50%;
 }
 
-.left-column > div, .right-column > div {
-    min-height: 250px;
-    flex-basis: calc(100% / 2);
+section.companies div.flex > img {
+    filter: invert(1);
 }
 
-.designit {
+section.companies div.designit {
     background-color: #A2D39B;
 }
 
-.arizona-state-university {
+section.companies div.arizona-state-university {
     background-color: #61082B;
 }
 
-.university-of-florida {
+section.companies div.university-of-florida {
     background-color: #0093CE;
 }
 
-.topps {
+section.companies div.topps {
     background-color: #FF1C1C;
 }
 
-.center-column {
-    min-height: 500px;
+section.companies > div.info {
     background-color: #F5F5F5;
+    padding: 50px;
 }
 
-.world-bicycle-relief {
+section.companies > div.info > p {
+    margin-bottom: 50px;
+}
+
+section.companies div.world-bicycle-relief {
     background-color: #D5001F;
 }
 
-.hearst {
+section.companies div.hearst {
     background-color: #B4D0E7;
 }
 
-.lonely-planet {
+section.companies div.lonely-planet {
     background-color: #0D2481;
 }
 
-.clear-channel-outdoor {
+section.companies div.clear-channel-outdoor {
     background-color: #FFD830;
 }
 
-.full-column {
-    min-height: 250px;
+section.companies > div.trial {
+    min-height: 325px;
     background-color: #B4D0E7;
-    flex-grow: 1;
+}
+
+section.companies > div.trial h2 {
+    color: #61082B;
 }
 
 section.faq {
@@ -279,30 +286,42 @@ section.faq span {
     flex-wrap: wrap;
 }
 
-.row > .column-30 {
+.flex.row.gap-25 {
+    gap: 25px;
+}
+
+.flex.row > .column-30 {
     flex-basis: 30%;
 }
 
-.row > .column-40 {
+.flex.row > .column-40 {
     flex-basis: 40%;
 }
 
-.row > .column-60 {
+.flex.row > .column-60 {
     flex-basis: 60%;
 }
 
-.row > .column-70 {
+.flex.row > .column-70 {
     flex-basis: 70%;
 }
 
-.row.columns-3 > .column {
+.flex.row.columns-2 > .column {
+    flex-basis: calc(100% / 2);
+}
+
+.flex.row.columns-3 > .column {
+    flex-basis: calc(100% / 3);
+}
+
+.flex.row.columns-3.gap-25 > .column {
     flex-basis: calc(100% / 3 - 50px / 3);
 }
 
-.row.columns-5 > .column {
+.flex.row.columns-5 > .column {
     flex-basis: calc(100% / 5);
 }
 
-.row.columns-3 {
-    gap: 25px;
+.flex.row.columns-grow > * {
+    flex-grow: 1;
 }
