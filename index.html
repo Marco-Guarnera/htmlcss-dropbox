@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- File CSS -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
@@ -58,22 +58,118 @@
     </header>
     <!-- Main -->
     <main>
-        <!-- Section Subscriptions -->
         <div class="container-small">
+            <!-- Section Subscriptions -->
             <section class="subscriptions">
-                <div class="billing-selection"></div>
-                <div class="row flex">
+                <h2>Trova il piano business che fa per te</h2>
+                <div class="billing-plan">
+                    <span><i class="fa-solid fa-circle-dot"></i> Fatturazione mensile</span>
+                    <span><i class="fa-regular fa-circle"></i> Fatturazione annuale</span>
+                </div>
+                <div class="flex row columns-3 columns-grow gap-50">
                     <div class="column">
-                        <div class="card"></div>
+                        <div class="subscription-card">
+                            <div class="subscription-card-user">
+                                <span><i class="fa-solid fa-user"></i> Singolo</span>
+                            </div>
+                            <div class="subscription-card-info">
+                                <h3>Professional</h3>
+                                <div class="subscription-card-info-price">
+                                    <span><strong>&euro; 12.00</strong></span><br>
+                                    <span>/mese</span>
+                                </div>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fa-solid fa-user"></span></i> 1 utente</li>
+                                    <li><span class="fa-li"><i class="fa-solid fa-folder"></i></span> 5 TB di spazio di archiviazione sicuro</li>
+                                    <li><span class="fa-li"><i class="fa-solid fa-share-nodes"></i></span> Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                                </ul>
+                                <a class="btn" href="#">Prova gratis per 30 giorni</a>
+                                <span>oppure <a href="#">acquista ora</a></span>
+                                <hr>
+                                <h4>Punti salienti del piano</h4>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> Invia file fino a 100 GB con Dropbox Transfert</li>
+                                    <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> Cartelle offline su dispositivi mobili</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="column">
-                        <div class="card"></div>
+                        <div class="subscription-card">
+                            <div class="subscription-card-user">
+                                <span><i class="fa-solid fa-users"></i> Team</span>
+                            </div>
+                            <div class="subscription-card-info">
+                                <h3>Advanced</h3>
+                                <div class="subscription-card-info-price">
+                                    <span><strong>&euro; 18.00</strong></span><br>
+                                    <span>/utente/mese</span>
+                                </div>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fa-solid fa-users"></i></span> 3 o più utenti</li>
+                                    <li><span class="fa-li"><i class="fa-solid fa-folder"></i></span> Tutto lo spazio di cui ha bisogno il tuo team</li>
+                                    <li><span class="fa-li"><i class="fa-solid fa-share-nodes"></i></span> Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</li>
+                                </ul>
+                                <a class="btn" href="#">Prova gratis per 30 giorni</a>
+                                <span>oppure <a href="#">acquista ora</a></span>
+                                <hr>
+                                <h4>Punti salienti del piano</h4>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> Nessun limite di spazio per i file</li>
+                                    <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> Cartelle offline su dispositivi mobili</li>
+                                    <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> Risparmio del 50% rispetto alle iscrizioni singole</li>
+                                    <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> Possibilità di inserire nuovi membri del team</li>
+                                    <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> Gestione dei permessi in base ai ruoli</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="column">
-                        <div class="card"></div>
+                        <div class="subscription-card">
+                            <div class="subscription-card-user">
+                                <span><i class="fa-solid fa-building"></i> Azienda</span>
+                            </div>
+                            <div class="subscription-card-info">
+                                <h3>Enterprise</h3>
+                                <div class="subscription-card-info-price">
+                                    <span><strong>Contattaci</strong></span><br>
+                                    <span>-</span>
+                                </div>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fa-solid fa-users"></i></span> 10 o più utenti</li>
+                                    <li><span class="fa-li"><i class="fa-solid fa-folder"></i></span> Soluzioni personalizzabili per la tua azienda</li>
+                                    <li><span class="fa-li"><i class="fa-solid fa-share-nodes"></i></span> Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</li>
+                                </ul>
+                                <a class="btn" href="#">Contattaci</a>
+                                <span>oppure <a href="#">acquista ora</a></span>
+                                <hr>
+                                <h4>Punti salienti del piano</h4>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> Cartelle offline su dispositivi mobili</li>
+                                    <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> Servizio assistenza 24/h</li>
+                                    <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> Possibilità di personalizzazione totale</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="column">
-                        <div class="card"></div>
+                    <div class="column column-grow">
+                        <div class="subscription-card">
+                            <div class="subscription-card-user">
+                                <span><i class="fa-solid fa-building-user"></i> Team</span>
+                            </div>
+                            <div class="subscription-card-info flex row">
+                                <div class="column-70">
+                                    <h3>Enterprise</h3>
+                                    <div class="subscription-card-info-price">
+                                        <span><strong>Contatta l'ufficio vendite per i prezzi</strong></span><br>
+                                    </div>
+                                    <span>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.</span>
+                                </div>
+                                <div class="column-30">
+                                    <a class="btn" href="#">Contatta l'ufficio vendite</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -96,7 +192,7 @@
             <!-- Section Features -->
             <section class="features">
                 <h2>Esegui più operazioni con Dropbox Business</h2>
-                <div class="flex row columns-3 gap-25">
+                <div class="flex row columns-3 gap-50">
                     <div class="column">
                         <div class="card">
                             <div class="card-img">

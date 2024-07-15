@@ -1,5 +1,6 @@
 :root {
     --primary-color: #0061FF;
+    --secondary-color: #DDD;
 }
 
 /* CSS Reset */
@@ -36,6 +37,10 @@ h3 {
     margin-bottom: 15px;
 }
 
+h4 {
+    margin-bottom: 25px;
+}
+
 hr {
     width: 25%;
     margin: 50px 0;
@@ -54,6 +59,7 @@ ul {
     list-style-type: none;
 }
 
+/* Main Header */
 #main-header {
     margin-bottom: 150px;
 }
@@ -85,64 +91,83 @@ ul {
     margin-bottom: 25px;
 }
 
-.fa-arrow-down {
-    margin-top: 25px;
-}
-
-.subscriptions {
+/* Main */
+main section {
     margin-bottom: 125px;
 }
 
-.billing-selection {
-    min-height: 125px;
+/* Section Subscriptions*/
+section.subscriptions > .billing-plan {
+    margin-bottom: 50px;
+}
+
+section.subscriptions > .billing-plan > span {
+    margin-right: 50px;
+}
+
+section.subscriptions .column {
+    border: 2px solid var(--secondary-color);
+}
+
+section.subscriptions hr {
+    color: var(--secondary-color);
+}
+
+section.subscriptions .subscription-card-user {
+    border-bottom: 2px solid var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+}
+
+section.subscriptions .subscription-card-info {
+    padding: 25px;
+}
+
+section.subscriptions .subscription-card-info-price span {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+section.subscriptions ul {
+    margin: 50px 0;
+}
+
+section.subscriptions li {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+section.subscriptions .btn {
+    display: block;
     margin-bottom: 25px;
+    text-align: center;
 }
 
-.subscriptions > .row {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 25px;
+section.subscriptions a:not(.btn) {
+    color: #00F;
+    text-decoration: underline;
 }
 
-.subscriptions .column {
-    min-height: 750px;
-    flex-basis: calc(100% / 3 - 50px / 3);
-}
-
-.subscriptions .column:last-child {
+section.subscriptions .column-full {
     min-height: 250px;
-    flex-grow: 1;
 }
 
-.subscriptions .column, .billing-selection {
-    border: 3px dashed #000;
+section.subscriptions .column-grow .subscription-card-info-price > span {
+    margin-bottom: 50px;
 }
 
-section.partner {
-    margin-bottom: 150px;
-}
-
+/* Section Partner */
 section.partner .column-40{
     padding: 50px;
 }
 
-section.features {
-    margin-bottom: 150px;
-}
-
-section.clients {
-    margin-bottom: 150px;
-}
-
+/* Section Clients */
 section.clients > a {
     color: #00F;
     text-decoration: underline;
 }
 
-section.companies {
-    margin-bottom: 125px;
-}
-
+/* Section Companies */
 section.companies > div > div  {
     min-height: 275px;
     justify-content: center;
@@ -207,10 +232,7 @@ section.companies > div.trial h2 {
     color: #61082B;
 }
 
-section.faq {
-    margin-bottom: 150px;
-}
-
+/* Section FAQ */
 section.faq > div {
     min-height: 100px;
     border-bottom: 1px solid black;
@@ -223,6 +245,7 @@ section.faq span {
     font-weight: bold;
 }
 
+/* Main Footer */
 #main-footer {
     min-height: 500px;
     background-color: #000;
@@ -276,6 +299,15 @@ section.faq span {
     padding: 5px 15px;
 }
 
+/* Icons */
+.fa-arrow-down {
+    margin-top: 25px;
+}
+
+.fa-check, .fa-circle-dot {
+    color: var(--primary-color);
+}
+
 /* Layout */
 .flex {
     display: flex;
@@ -286,8 +318,8 @@ section.faq span {
     flex-wrap: wrap;
 }
 
-.flex.row.gap-25 {
-    gap: 25px;
+.flex.row.gap-50 {
+    gap: 50px;
 }
 
 .flex.row > .column-30 {
@@ -314,8 +346,8 @@ section.faq span {
     flex-basis: calc(100% / 3);
 }
 
-.flex.row.columns-3.gap-25 > .column {
-    flex-basis: calc(100% / 3 - 50px / 3);
+.flex.row.columns-3.gap-50 > .column {
+    flex-basis: calc(100% / 3 - 100px / 3);
 }
 
 .flex.row.columns-5 > .column {
