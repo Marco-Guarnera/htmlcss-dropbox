@@ -96,12 +96,12 @@ main section {
     margin-bottom: 125px;
 }
 
-/* Section Subscriptions*/
-section.subscriptions > .billing-plan {
+/* Subscriptions Section */
+section.subscriptions .billing-plan {
     margin-bottom: 50px;
 }
 
-section.subscriptions > .billing-plan > span {
+section.subscriptions .billing-plan > span {
     margin-right: 50px;
 }
 
@@ -156,96 +156,96 @@ section.subscriptions .column-grow .subscription-card-info-price > span {
     margin-bottom: 50px;
 }
 
-/* Section Partner */
+/* Partner Section */
 section.partner .column-40{
     padding: 50px;
 }
 
-/* Section Clients */
-section.clients > a {
+/* Clients Section */
+section.clients a:not(.btn) {
     color: #00F;
+    margin-bottom: 125px;
     text-decoration: underline;
 }
 
-/* Section Companies */
-section.companies > div > div  {
+section.clients > div > div > div {
     min-height: 275px;
     justify-content: center;
     align-items: center;
 }
 
-section.companies .column-grow {
+section.clients .column-grow {
     min-height: 325px;
     justify-content: space-between;
     align-items: center;
 }
 
-section.companies .column-grow a {
+section.clients .column-grow a {
     display: block;
     border-color: #FFF;
     text-align: center;
 }
 
-section.companies .column-grow h2 {
+section.clients .column-grow h2 {
     margin: 0;
 }
 
-section.companies img {
+section.clients img {
     width: 50%;
 }
 
-section.companies div.flex > img {
+section.clients div.flex > img {
     filter: invert(1);
 }
 
-section.companies div.designit {
+section.clients div.designit {
     background-color: #A2D39B;
 }
 
-section.companies div.arizona-state-university {
+section.clients div.arizona-state-university {
     background-color: #61082B;
 }
 
-section.companies div.university-of-florida {
+section.clients div.university-of-florida {
     background-color: #0093CE;
 }
 
-section.companies div.topps {
+section.clients div.topps {
     background-color: #FF1C1C;
 }
 
-section.companies > div.info {
+section.clients div.info {
     background-color: #F5F5F5;
     padding: 50px;
 }
 
-section.companies > div.info > p {
+section.clients div.info > p {
     margin-bottom: 50px;
 }
 
-section.companies div.world-bicycle-relief {
+section.clients div.world-bicycle-relief {
     background-color: #D5001F;
 }
 
-section.companies div.hearst {
+section.clients div.hearst {
     background-color: #B4D0E7;
 }
 
-section.companies div.lonely-planet {
+section.clients div.lonely-planet {
     background-color: #0D2481;
 }
 
-section.companies div.clear-channel-outdoor {
+section.clients div.clear-channel-outdoor {
     background-color: #FFD830;
 }
 
-section.companies > div:last-child {
+section.clients > div:last-child {
     background-color: #B4D0E7;
     color: #61082B;
 }
 
-/* Section FAQ */
-section.faq > div {
+/* FAQ Section */
+section.faq div:not(.container-small) {
     min-height: 100px;
     border-bottom: 1px solid black;
     justify-content: space-between;
